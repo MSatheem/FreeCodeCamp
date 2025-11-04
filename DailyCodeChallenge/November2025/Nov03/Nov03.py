@@ -2,10 +2,17 @@ import unittest
 
 def count_words(sentence):
     stringSplit = sentence.split(' ')
-    count = 0
-    for i in stringSplit:
-        count += 1
-    return count
+    return len(stringSplit)
+   
+
+################alternate method##################
+# def count_words(sentence):
+#     stringSplit = sentence.split(' ')
+#     count = 0
+#     for i in stringSplit:
+#         count += 1
+#     return count
+
 
 class TestCase(unittest.TestCase):
     def test1(self):
